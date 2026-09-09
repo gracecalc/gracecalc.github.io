@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кредитки с грейс-периодом 120 дней и накопительные счета до 15% — 2026</title>
+<meta name="description" content="Подборка кредитных карт с грейс-периодом до 120 дней, дебетовых карт с кешбэком и накопительных счетов до 15%. Калькулятор покажет выгоду за 10 секунд.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Кредитки с грейс-периодом и накопительные счета — подборка 2026",
+  "description": "Сравнение кредитных карт с длинным грейс-периодом, дебетовых карт с кешбэком и накопительных счетов",
+  "inLanguage": "ru"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что такое грейс-период простыми словами?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Это срок, в течение которого банк не начисляет проценты на покупки по кредитной карте. Если полностью вернуть потраченное до конца грейс-периода, проценты платить не нужно вообще."}
+    },
+    {
+      "@type": "Question",
+      "name": "Что будет, если не успеть погасить долг до конца грейс-периода?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Банк начислит проценты. В большинстве банков проценты пересчитывают на весь долг с момента каждой покупки. Ставка по кредитным картам обычно 30-50% годовых."}
+    },
+    {
+      "@type": "Question",
+      "name": "Что такое минимальный платёж по кредитной карте?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Обязательный ежемесячный взнос, обычно 3-10% от задолженности. Его нужно платить даже внутри грейс-периода."}
+    },
+    {
+      "@type": "Question",
+      "name": "Накопительный счёт или вклад — что выгоднее?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Накопительный счёт позволяет снять деньги в любой момент без потери процентов, но ставка плавающая. Вклад фиксирует ставку, но блокирует деньги на срок."}
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --green:#0a8f4e;--green-d:#087a42;--dark:#12212f;--grey:#5f6f80;--grey-l:#8a99a8;
+    --bg:#eef2f6;--card:#ffffff;--line:#e2e8ef;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--dark);background:var(--bg);line-height:1.55;}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 18px;}
+
+  /* ===== HEADER ===== */
+  header{background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+  .logo{font-weight:800;font-size:19px;color:var(--dark);text-decoration:none;}
+  .logo span{color:var(--green);}
+  nav{display:flex;gap:22px;}
+  nav a{color:var(--grey);text-decoration:none;font-size:14px;font-weight:600;}
+  nav a:hover{color:var(--green);}
+  @media(max-width:720px){nav{display:none;}}
+
+  /* ===== HERO ===== */
+  .hero{background:linear-gradient(135deg,#0c3a26 0%,#0a8f4e 60%,#12b364 100%);color:#fff;padding:56px 0 50px;}
+  .hero h1{font-size:34px;line-height:1.2;max-width:720px;margin-bottom:14px;}
+  .hero p{font-size:17px;opacity:.92;max-width:640px;margin-bottom:26px;}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{display:inline-block;border:none;border-radius:10px;padding:14px 26px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;}
+  .btn-white{background:#fff;color:var(--green-d);}
+  .btn-white:hover{background:#e8f5ee;}
+  .btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);}
+  .hero-chips{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;font-size:14px;}
+  .hero-chips div{display:flex;align-items:center;gap:7px;opacity:.95;}
+  .hero-chips b{font-size:16px;}
+
+  /* ===== SECTIONS ===== */
+  section{padding:56px 0 6px;}
+  h2{font-size:25px;margin-bottom:6px;}
+  .sec-sub{color:var(--grey);margin-bottom:22px;font-size:15px;}
+  h3{font-size:17px;margin:18px 0 8px;}
+
+  /* ===== OFFER CARDS ===== */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px;align-items:stretch;}
+  .offer-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;transition:box-shadow .15s,transform .15s;flex:1;}
+  .offer-card:hover{box-shadow:0 8px 24px rgba(18,33,47,.10);transform:translateY(-2px);}
+  .oc-bottom{margin-top:auto;display:flex;flex-direction:column;gap:8px;}
+  .oc-top{display:flex;align-items:center;gap:11px;}
+  .mono{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .mono img{width:28px;height:28px;border-radius:6px;object-fit:contain;}
+  .oc-bank{font-weight:700;font-size:15px;line-height:1.25;}
+  .oc-prod{font-size:12.5px;color:var(--grey-l);}
+  .grace-badge{display:inline-block;background:#eaf7f0;color:var(--green);border-radius:9px;padding:5px 11px;font-weight:800;font-size:17px;align-self:flex-start;white-space:nowrap;}
+  .oc-feats{font-size:13.5px;color:var(--grey);display:flex;flex-direction:column;gap:5px;}
+  .oc-feats span{display:flex;gap:7px;align-items:baseline;}
+  .oc-feats .ck{color:var(--green);font-weight:800;}
+  .btn-sm{display:inline-block;background:var(--green);color:#fff;text-decoration:none;border-radius:9px;padding:11px 16px;font-size:14px;font-weight:700;text-align:center;transition:background .15s,box-shadow .15s;}
+  .btn-sm:hover{background:var(--green-d);box-shadow:0 4px 14px rgba(10,143,78,.35);}
+  .btn-note{font-size:11.5px;color:var(--grey-l);text-align:center;}
+  .hit{border:1.5px solid var(--green);}
+  .hit-tag{position:absolute;top:-11px;left:14px;background:#ff9800;color:#fff;font-size:11px;font-weight:800;border-radius:6px;padding:3px 10px;z-index:2;letter-spacing:.3px;box-shadow:0 2px 6px rgba(255,152,0,.35);}
+  .oc-wrap{position:relative;display:flex;}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;}
+  .tag{background:#f2f6fa;border:1px solid var(--line);color:var(--grey);font-size:11.5px;font-weight:600;border-radius:6px;padding:3px 8px;}
+  .bonus-tag{background:#fff3e0;border-color:#ffb74d;color:#e65100;font-weight:800;}
+
+  /* ===== MOBILE ===== */
+  @media(max-width:640px){
+    .hero{padding:40px 0 36px;}
+    .hero h1{font-size:25px;}
+    .hero p{font-size:15px;}
+    .hero-cta .btn{width:100%;text-align:center;padding:14px 10px;}
+    .hero-chips{gap:10px;}
+    .hero-chips div{width:100%;background:rgba(255,255,255,.10);border-radius:8px;padding:8px 12px;}
+    section{padding:40px 0 6px;}
+    h2{font-size:21px;}
+    .cards{grid-template-columns:1fr;}
+    .calc-card{padding:18px;}
+    .calc-grid{grid-template-columns:1fr;}
+    .rules{padding:16px;}
+    .btn{font-size:15px;padding:13px 18px;}
+    .wrap{padding:0 14px;}
+  }
+
+  /* ===== NOTE ===== */
+  .note{font-size:12.5px;color:var(--grey-l);margin:14px 0 0;}
+
+  /* ===== OFFER EXTRAS ===== */
+  .rate-line{display:flex;gap:8px;flex-wrap:wrap;}
+  .rate-pill{background:#f2f6fa;border:1px solid var(--line);border-radius:8px;padding:6px 10px;text-align:center;flex:1;min-width:80px;}
+  .rate-pill b{display:block;font-size:15px;color:var(--dark);}
+  .rate-pill span{font-size:11px;color:var(--grey-l);}
+  .limit-line{font-size:13px;color:var(--grey);display:flex;align-items:baseline;gap:7px;}
+  .limit-line b{font-size:20px;color:var(--dark);}
+
+  /* ===== CALC ===== */
+  .calc-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;}
+  .calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-bottom:16px;}
+  label{display:block;font-size:12.5px;color:var(--grey);margin-bottom:5px;font-weight:600;line-height:1.45;min-height:36px;}
+  input[type=number]{width:100%;padding:11px 13px;border:1.5px solid #d4dce5;border-radius:10px;font-size:16px;background:#fbfcfe;}
+  input[type=number]:focus{outline:none;border-color:var(--green);}
+  .btn-green{background:var(--green);color:#fff;}
+  .btn-ghost-dark{background:#fff;color:var(--green-d);border:1.5px solid var(--green);}
+  .btn-green:hover{background:var(--green-d);}
+  .result{background:#eaf7f0;border-radius:12px;padding:16px 18px;margin-top:14px;font-size:16.5px;display:none;}
+  .result b{color:var(--green);font-size:22px;}
+  .warn{color:#b0562b;font-size:13.5px;margin-top:9px;}
+
+  .rules{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;font-size:14.5px;margin-top:14px;}
+  .rules ul{padding-left:20px;display:flex;flex-direction:column;gap:6px;}
+
+  /* ===== FAQ ===== */
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin-bottom:10px;}
+  summary{font-weight:700;cursor:pointer;font-size:15px;}
+  details p{margin-top:9px;color:var(--grey);font-size:14.5px;}
+
+  footer{padding:36px 0 44px;color:var(--grey-l);font-size:13px;text-align:center;}
+  .tg-help{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--green-d);border:1.5px solid var(--green);text-decoration:none;font-weight:700;font-size:15px;border-radius:10px;padding:13px 18px;transition:background .15s,box-shadow .15s;}
+  .tg-help:hover{background:#eaf7f0;box-shadow:0 4px 14px rgba(10,143,78,.25);}
+  .tg-section{text-align:center;margin:10px 0 0;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">Грейс<span>Гид</span></a>
+    <nav>
+      <a href="#credit">Кредитки</a>
+      <a href="#debit">Дебетовые</a>
+      <a href="#savings">Накопительные</a>
+      <a href="#grace-calc">Калькулятор грейса</a>
+      <a href="#sav-calc">Калькулятор счёта</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Грейс-период 120 дней: пользуйтесь деньгами банка бесплатно</h1>
+    <p>Сравнили карты с самым длинным льготным периодом и счета с высокой ставкой. Посчитайте свою выгоду на калькуляторе за 10 секунд.</p>
+    <div class="hero-cta">
+      <a class="btn btn-white" href="#credit">Смотреть карты</a>
+      <a class="btn btn-ghost" href="#grace-calc">Посчитать выгоду</a>
+    </div>
+    <div class="hero-chips">
+      <div><b>120 дней</b> максимальный грейс</div>
+      <div><b>0 ₽</b> обслуживание</div>
+      <div><b>до 19%</b> на коротких вкладах</div>
+      <div><b>2 минуты</b> заявка по паспорту</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- ===== GRACE CALC ===== -->
+  <section id="grace-calc">
+    <h2>Калькулятор выгоды от грейс-периода</h2>
+    <p class="sec-sub">Сколько принесут ваши деньги, пока вы пользуетесь деньгами банка по кредитке. Чем больше сумма «паркуется» на счёте — тем больше процентов капает.</p>
+    <div class="calc-card">
+      <div class="calc-grid">
+        <div>
+          <label>Сумма на накопительном счёте, ₽</label>
+          <input type="number" id="spend" value="350000" step="10000">
+        </div>
+        <div>
+          <label>Грейс-период, дней</label>
+          <input type="number" id="grace" value="360" min="30" max="365">
+        </div>
+        <div>
+          <label>Ставка накопительного счёта, % годовых</label>
+          <input type="number" id="dep" value="15" step="0.5">
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-green" onclick="calcGrace()">Рассчитать выгоду</button>
+        <a class="btn btn-ghost-dark" href="#credit">Выбрать карту ↓</a>
+        <a class="tg-help" href="https://t.me/yourmger" target="_blank" rel="noopener">Помощь в Telegram</a>
+      </div>
+      <div class="result" id="graceResult"></div>
+      <div class="warn" id="graceWarn"></div>
+    </div>
+    <div class="rules">
+      <b>Почему это работает: банк платит за вас, а вы — нет</b>
+      <ul>
+        <li>Грейс распространяется на <b>любые покупки</b> — продукты, бензин, подписки, интернет.</li>
+        <li>Свои деньги всё это время работают на счёте и <b>приносят проценты</b>.</li>
+        <li>Чтобы выгода сохранилась: возвращайте долг <b>к концу грейса</b> и вносите минимальный платёж каждый месяц — просто поставьте автоплатёж.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CREDIT CARDS ===== -->
+  <section id="credit">
+    <h2>Кредитки с самым длинным грейсом</h2>
+    <p class="sec-sub">Отсортировано по длине льготного периода · обновлено: сентябрь 2026</p>
+    <div class="cards">
+      <div class="oc-wrap">
+        <span class="hit-tag">ВЫГОДНО</span>
+        <div class="offer-card hit">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=uralsib.ru&sz=64" alt="Уралсиб" onerror="this.parentNode.innerHTML='У';this.parentNode.style.background='#c8102e';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Уралсиб</div><div class="oc-prod">Кредитная карта · 110 дней</div></div>
+          </div>
+          <span class="grace-badge">до 120 дней без %</span>
+          <div class="rate-line">
+            <div class="rate-pill"><b>0 ₽</b><span>обслуживание</span></div>
+            <div class="rate-pill"><b>5 млн ₽</b><span>лимит</span></div>
+          </div>
+          <div class="oc-feats">
+            <span><span class="ck">✓</span> Кешбэк баллами за покупки</span>
+            <span><span class="ck">✓</span> Решение за 2 минуты по паспорту</span>
+          </div>
+          <div class="tags"><span class="tag">По паспорту</span><span class="tag">Решение за 2 минуты</span><span class="tag">Доставка курьером</span></div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/407?erid=2W5zFH4Ww45" data-aff="uralsib">Оформить заявку →</a><div class="btn-note">Бесплатная доставка · Отказ не портит кредитную историю</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=otpbank.ru&sz=64" alt="ОТП Банк" onerror="this.parentNode.innerHTML='О';this.parentNode.style.background='#f26522';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">ОТП Банк</div><div class="oc-prod">Карта «120 дней без %»</div></div>
+          </div>
+          <span class="grace-badge">до 120 дней без %</span>
+          <div class="rate-line">
+            <div class="rate-pill"><b>0 ₽</b><span>обслуживание</span></div>
+            <div class="rate-pill"><b>10%</b><span>кешбэк</span></div>
+          </div>
+          <div class="oc-feats">
+            <span><span class="ck">✓</span> Снятие наличных без комиссии 4 мес</span>
+            <span><span class="ck">✓</span> Решение за 5 минут, нужен только паспорт</span>
+          </div>
+          <div class="tags"><span class="tag">По паспорту</span><span class="tag">Решение за 5 мин</span><span class="tag">Кешбэк до 10%</span></div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/941?erid=2W5zFHUSt6V" data-aff="otp">Оформить заявку →</a><div class="btn-note">Доставка курьером бесплатно · Отказ не портит КИ</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <span class="hit-tag">ПОПУЛЯРНАЯ</span>
+        <div class="offer-card hit">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=tbank.ru&sz=64" alt="Т-Банк" onerror="this.parentNode.innerHTML='Т';this.parentNode.style.background='#1f1f1f';this.parentNode.style.color='#FFDD2D'"></div>
+            <div><div class="oc-bank">Т-Банк</div><div class="oc-prod">Кредитная карта · Platinum</div></div>
+          </div>
+          <span class="grace-badge">до 55 дней без %</span>
+          <div class="rate-line">
+            <div class="rate-pill"><b>700 тыс ₽</b><span>лимит</span></div>
+            <div class="rate-pill"><b>30%</b><span>кешбэк баллами</span></div>
+          </div>
+          <div class="oc-feats">
+            <span><span class="ck">✓</span> Рассрочка до 12 мес на любые покупки</span>
+            <span><span class="ck">✓</span> Оформление за 5 минут, доставка курьером</span>
+          </div>
+          <div class="tags"><span class="tag">Рассрочка 12 мес</span><span class="tag">Кешбэк баллами</span><span class="tag">Доставка</span></div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/27?erid=2W5zFKAWohb" data-aff="tbank">Оформить заявку →</a><div class="btn-note">Кешбэк баллами · Доставка на следующий день</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=alfabank.ru&sz=64" alt="Альфа-Банк" onerror="this.parentNode.innerHTML='А';this.parentNode.style.background='#EF3124';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Альфа-Банк</div><div class="oc-prod">Кредитная карта · 60 дней</div></div>
+          </div>
+          <span class="grace-badge">до 60 дней без %</span>
+          <div class="rate-line">
+            <div class="rate-pill"><b>1 млн ₽</b><span>лимит</span></div>
+            <div class="rate-pill"><b>0 ₽</b><span>первый год</span></div>
+          </div>
+          <div class="oc-feats">
+            <span><span class="ck">✓</span> Перевод своих денег с кредитки без комиссии</span>
+            <span><span class="ck">✓</span> Решение по паспорту за 2 минуты</span>
+          </div>
+          <div class="tags"><span class="tag">По паспорту</span><span class="tag">Лимит до 1 млн</span><span class="tag">Переводы 0 ₽</span></div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/339?erid=2W5zFJjJPEG" data-aff="alfa">Оформить заявку →</a><div class="btn-note">Доставка курьером · Решение мгновенно</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">«До N дней» — максимальный льготный период: у части банков грейс считается от первой покупки, у части — от расчётного периода. Все банки имеют лицензию ЦБ РФ.</p>
+  </section>
+
+  <!-- ===== DEBIT ===== -->
+  <section id="debit">
+    <h2>Дебетовые карты с кешбэком</h2>
+    <p class="sec-sub">Кешбэк на свои обычные траты — без рисков кредитки</p>
+    <div class="cards">
+      <div class="oc-wrap">
+        <span class="hit-tag">МАКС. КЕШБЭК</span>
+        <div class="offer-card hit">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=ozon.ru&sz=64" alt="Ozon Банк" onerror="this.parentNode.innerHTML='O';this.parentNode.style.background='#005BFF';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Ozon Банк</div><div class="oc-prod">Дебетовая карта</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> Кешбэк до 25% рублями</span>
+            <span><span class="ck">✓</span> Скидки до 30% на Ozon</span>
+            <span><span class="ck">✓</span> Переводы без комиссии</span>
+            <span><span class="ck">✓</span> Снятие наличных без комиссии</span>
+          </div>
+          <div class="tags"><span class="tag">18+</span><span class="tag">Доставка в ПВЗ</span><span class="tag">Выпуск за 1 день</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>0 ₽</b><span>выпуск и обслуживание</span></div>
+            <div class="rate-pill"><b>25%</b><span>кешбэк максимум</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/700?erid=2W5zFGq8Wsa" data-aff="ozon-debit">Оформить заявку →</a><div class="btn-note">Доставка в ПВЗ Ozon · Выпустим за 1 день</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <span class="hit-tag">ВЫГОДНО</span>
+        <div class="offer-card hit">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=otpbank.ru&sz=64" alt="ОТП Банк" onerror="this.parentNode.innerHTML='О';this.parentNode.style.background='#f26522';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">ОТП Банк</div><div class="oc-prod">ОТП Карта · дебетовая</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> <b>1000 ₽ приветственный бонус</b> новым клиентам</span>
+            <span><span class="ck">✓</span> Кешбэк до 10% в 4 категориях</span>
+          </div>
+          <div class="tags"><span class="tag">Бонус 1000 ₽</span><span class="tag">Кешбэк до 10%</span><span class="tag">Доставка курьером</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>0 ₽</b><span>обслуживание</span></div>
+            <div class="rate-pill"><b>1000 ₽</b><span>приветственный бонус</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/434?erid=2W5zFJrVsqB" data-aff="otp-debit">Оформить заявку →</a><div class="btn-note">Доставка курьером · Бонус за первые покупки</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=mtsdengi.ru&sz=64" alt="МТС Банк" onerror="this.parentNode.innerHTML='М';this.parentNode.style.background='#E30611';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">МТС Банк</div><div class="oc-prod">Дебетовая карта · МТС Деньги</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> 10% кешбэк на всё первые 3 мес</span>
+            <span><span class="ck">✓</span> Подписка МТС Premium в подарок</span>
+          </div>
+          <div class="tags"><span class="tag">По паспорту</span><span class="tag">Кешбэк 10%</span><span class="tag">Premium в подарок</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>0 ₽</b><span>обслуживание</span></div>
+            <div class="rate-pill"><b>10%</b><span>кешбэк на всё 3 мес</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/618?erid=2W5zFHxULji" data-aff="mts-debit">Оформить заявку →</a><div class="btn-note">Доставка курьером бесплатно · Первый месяц всё 10%</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=alfabank.ru&sz=64" alt="Альфа-Банк" onerror="this.parentNode.innerHTML='А';this.parentNode.style.background='#EF3124';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Альфа-Банк</div><div class="oc-prod">Апельсиновая карта</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> До 7% в Пятёрочке и Перекрёстке</span>
+            <span><span class="ck">✓</span> Бесплатная без условий и мелкого шрифта</span>
+          </div>
+          <div class="tags"><span class="tag">Без условий</span><span class="tag">Супермаркеты 7%</span><span class="tag">Апельсинки</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>7%</b><span>кешбэк в супермаркетах</span></div>
+            <div class="rate-pill"><b>0 ₽</b><span>обслуживание без условий</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/556?erid=2W5zFGy1aGQ" data-aff="alfa-debit">Оформить заявку →</a><div class="btn-note">Доставка курьером · Выпуск бесплатно</div></div>
+        </div>
+      </div>
+
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=psbank.ru&sz=64" alt="ПСБ" onerror="this.parentNode.innerHTML='П';this.parentNode.style.background='#00549E';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">ПСБ</div><div class="oc-prod">«Твой кешбэк» · дебетовая</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> 25% кешбэк на всё первые 3 мес</span>
+            <span><span class="ck">✓</span> Бесплатная доставка от 1 дня</span>
+          </div>
+          <div class="tags"><span class="tag">Приветственный 25%</span><span class="tag">Вклад до 14,3%</span><span class="tag">Доставка от 1 дня</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>до 14%</b><span>на счёте у партнёров</span></div>
+            <div class="rate-pill"><b>25%</b><span>кешбэк 3 месяца</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/639?erid=2W5zFFyDoLU" data-aff="psb-debit">Оформить заявку →</a><div class="btn-note">Бесплатная доставка · Подходит для зарплаты</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=rshb.ru&sz=64" alt="Россельхозбанк" onerror="this.parentNode.innerHTML='Р';this.parentNode.style.background='#3E7B27';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Россельхозбанк</div><div class="oc-prod">UnionPay · дебетовая</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> Оплата за границей и зарубежных сервисов</span>
+            <span><span class="ck">✓</span> Моментальное оформление</span>
+          </div>
+          <div class="tags"><span class="tag">UnionPay</span><span class="tag">Оплата за рубежом</span><span class="tag">Моментально</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>15%</b><span>кешбэк максимум</span></div>
+            <div class="rate-pill"><b>0 ₽</b><span>выпуск и обслуживание</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/930?erid=2W5zFGdgfuj" data-aff="rshb-debit">Оформить заявку →</a><div class="btn-note">Выдача в день обращения · Работает за границей</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">При выборе дебетовой карты считайте три вещи: реальный кешбэк под ваши траты, условие бесплатного обслуживания и процент на остаток. Ссылки ведут на официальные заявки банков.</p>
+  </section>
+
+<section id="sav-calc">
+    <h2>Калькулятор накопительного счёта</h2>
+    <p class="sec-sub">Деньги снимаются в любой момент без потери процентов, но ставка плавающая</p>
+    <div class="calc-card">
+      <div class="calc-grid">
+        <div>
+          <label>Сумма, ₽</label>
+          <input type="number" id="sav" value="350000" step="5000">
+        </div>
+        <div>
+          <label>Ставка, % годовых</label>
+          <input type="number" id="savRate" value="15" step="0.5">
+        </div>
+        <div>
+          <label>Срок, месяцев</label>
+          <input type="number" id="savMonths" value="12" min="1" max="36">
+        </div>
+      </div>
+      <button class="btn btn-green" onclick="calcSavings()">Рассчитать доход</button>
+      <div class="result" id="savResult"></div>
+      <div class="warn" id="savWarn"></div>
+    </div>
+  </section>
+
+  <!-- ===== SAVINGS ===== -->
+  <section id="savings">
+    <h2>До 15% на остаток: карты с накопительным счётом</h2>
+    <p class="sec-sub">В этих банках счёт с повышенной ставкой открывается вместе с дебетовой картой — заявка одна. Короткие вклады дают больше (до 19%), но деньги там заблокированы на срок.</p>
+    <div class="cards">
+      <div class="oc-wrap">
+        <span class="hit-tag">МАКС. СТАВКА</span>
+        <div class="offer-card hit">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=psbank.ru&sz=64" alt="ПСБ" onerror="this.parentNode.innerHTML='П';this.parentNode.style.background='#00549E';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">ПСБ</div><div class="oc-prod">Счёт «Акцент на процент»</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> Снятие в любой момент без потери процентов</span>
+            <span><span class="ck">✓</span> В связке с картой «Твой кешбэк»</span>
+          </div>
+          <div class="tags"><span class="tag">До 15% на счёте</span><span class="tag">Снятие без потерь</span><span class="tag">Госбанк-надёжность</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>до 14,3%</b><span>на вкладе «В победу»</span></div>
+            <div class="rate-pill"><b>0 ₽</b><span>открытие и ведение</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/639?erid=2W5zFFyDoLU" data-aff="psb-sav">Открыть счёт →</a><div class="btn-note">Пополнение и снятие без ограничений</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=bank-yarkaya.ru&sz=64" alt="Банк «Яркая»" onerror="this.parentNode.innerHTML='Я';this.parentNode.style.background='#E6007E';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Банк «Яркая»</div><div class="oc-prod">Карта «Мир Яркая» + счёт</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> До 25% бонусов у партнёров</span>
+            <span><span class="ck">✓</span> Москва · СПб · Новосибирск · Калининград</span>
+          </div>
+          <div class="tags"><span class="tag">До 15% на остаток</span><span class="tag">Бонусы до 25%</span><span class="tag">4 города</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>до 15%</b><span>на остаток от 50 тыс ₽</span></div>
+            <div class="rate-pill"><b>до 25%</b><span>бонусы у партнёров</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/702?erid=2W5zFG4fRU5" data-aff="yarkaya-sav">Открыть счёт →</a><div class="btn-note">Бесплатный выпуск карты · Курьер на дом</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=akbars.ru&sz=64" alt="Ак Барс Банк" onerror="this.parentNode.innerHTML='А';this.parentNode.style.background='#009246';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">Ак Барс Банк</div><div class="oc-prod">Дебетовая карта + остаток</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> 10% кешбэк на ЖКХ</span>
+            <span><span class="ck">✓</span> Обслуживание 0 ₽</span>
+          </div>
+          <div class="tags"><span class="tag">До 11% на остаток</span><span class="tag">ЖКХ 10%</span><span class="tag">Обслуживание 0 ₽</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>до 11%</b><span>на остаток</span></div>
+            <div class="rate-pill"><b>10%</b><span>кешбэк на ЖКХ</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/397?erid=2VfnxvVWi3a" data-aff="akbars-sav">Открыть счёт →</a><div class="btn-note">Открытие в приложении за 5 минут</div></div>
+        </div>
+      </div>
+      <div class="oc-wrap">
+        <div class="offer-card">
+          <div class="oc-top">
+            <div class="mono"><img src="https://www.google.com/s2/favicons?domain=otpbank.ru&sz=64" alt="ОТП Банк" onerror="this.parentNode.innerHTML='О';this.parentNode.style.background='#f26522';this.parentNode.style.color='#fff'"></div>
+            <div><div class="oc-bank">ОТП Банк</div><div class="oc-prod">Накопительный счёт + карта</div></div>
+          </div>
+          <div class="oc-feats" style="margin-top:6px">
+            <span><span class="ck">✓</span> Кешбэк до 10% по карте</span>
+            <span><span class="ck">✓</span> 1000 ₽ приветственный бонус</span>
+          </div>
+          <div class="tags"><span class="tag">Бонус 1000 ₽</span><span class="tag">Кешбэк до 10%</span><span class="tag">Счёт + карта</span></div>
+          <div class="rate-line">
+            <div class="rate-pill"><b>% на остаток</b><span>по накопительному счёту</span></div>
+            <div class="rate-pill"><b>0 ₽</b><span>обслуживание карты</span></div>
+          </div><div class="oc-bottom"><a class="btn-sm" href="https://t.fincpanetwork.ru/click/89842/434?erid=2W5zFJrVsqB" data-aff="otp-sav">Открыть счёт →</a><div class="btn-note">Доставка карты курьером бесплатно</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Ставки меняются еженедельно — главный вопрос всегда один: какая ставка будет после промо-периода. Уточняйте на сайтах банков.</p>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <h2>Частые вопросы</h2>
+    <p class="sec-sub">Коротко о главном</p>
+    <details open>
+      <summary>Что такое грейс-период простыми словами?</summary>
+      <p>Срок, когда банк не начисляет проценты на покупки по кредитке. Вернули всё потраченное до конца грейса — проценты ноль, вы бесплатно пользовались деньгами банка.</p>
+    </details>
+    <details>
+      <summary>Что будет, если не успеть погасить до конца грейса?</summary>
+      <p>Банк начислит проценты, причём обычно пересчитает их на весь долг с момента каждой покупки, а не с конца грейса. Ставка по кредиткам — 30–50% годовых. Поэтому схема работает только при дисциплине.</p>
+    </details>
+    <details>
+      <summary>Что такое минимальный платёж?</summary>
+      <p>Обязательный ежемесячный взнос, обычно 3–10% от долга. Его нужно платить даже внутри грейса — иначе льготный период отменяется.</p>
+    </details>
+    <details>
+      <summary>Накопительный счёт или вклад — что лучше?</summary>
+      <p>Накопительный счёт: снять можно в любой момент, но ставка плавающая и может снизиться. Вклад: ставка зафиксирована, но деньги заблокированы до конца срока. Часто выгодно комбинировать.</p>
+    </details>
+    <details>
+      <summary>Гарантирует ли банк промо-ставку навсегда?</summary>
+      <p>Нет. Повышенная ставка обычно действует 1–3 месяца или только на новые деньги, потом падает до базовой. Всегда смотрите ставку «после промо» в тарифах банка.</p>
+    </details>
+  </section>
+
+</div>
+
+<div class="wrap tg-section">
+  <a class="tg-help" href="https://t.me/yourmger" target="_blank" rel="noopener">Остались вопросы? Напишите в Telegram</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 ГрейсГид · 18+</div>
+  </div>
+</footer>
+
+<script>
+function fmt(n){return n.toLocaleString("ru-RU",{maximumFractionDigits:0});}
+
+function calcGrace(){
+  var t=+document.getElementById("spend").value||0;
+  var g=+document.getElementById("grace").value||0;
+  var i=+document.getElementById("dep").value||0;
+  var out=document.getElementById("graceResult"), warn=document.getElementById("graceWarn");
+  if(t<=0||g<=0){warn.textContent="Заполните сумму и срок грейса."; out.style.display="none"; return;}
+  warn.textContent="";
+  var earned=t*(i/100)*(g/365);
+  var cycles=Math.floor(365/g);
+  var yearly=t*(i/100)*g*cycles/365;
+  var cw = cycles%10===1&&cycles%100!==11 ? "цикл" : (cycles%10>=2&&cycles%10<=4&&(cycles%100<10||cycles%100>=20) ? "цикла" : "циклов");
+  var line2;
+  if(cycles>1){
+    line2="Повторяя круги весь год ("+cycles+" "+cw+" подряд), кредитка принесёт вам <b>≈"+fmt(yearly)+" ₽</b> за год. Переплата банку: <b>0 ₽</b>.";
+  } else {
+    line2="Это круглогодичная парковка: проценты капают все 12 месяцев. Переплата банку: <b>0 ₽</b>.";
+  }
+  out.style.display="block";
+  out.innerHTML="Расчёт: <b>"+fmt(t)+" ₽</b> на счёте × "+i+"% × "+g+" дн. = <b>≈"+fmt(earned)+" ₽</b> за один грейс-период.<br>"+line2;
+  warn.textContent="";
+}
+
+function calcSavings(){
+  var s=+document.getElementById("sav").value||0;
+  var r=+document.getElementById("savRate").value||0;
+  var m=+document.getElementById("savMonths").value||0;
+  var out=document.getElementById("savResult"), warn=document.getElementById("savWarn");
+  if(s<=0||m<=0){warn.textContent="Заполните сумму и срок."; out.style.display="none"; return;}
+  warn.textContent="";
+  var earned=s*r/100*m/12;
+  out.style.display="block";
+  out.innerHTML="За "+m+" мес. на счёте накопится процентов: <b>"+fmt(earned)+" ₽</b><br>Итого с процентами: <b>"+fmt(s+earned)+" ₽</b>.<br>Расчёт при неизменной ставке — по факту ставка может снизиться после промо-периода.";
+}
+
+calcGrace(); calcSavings();
+</script>
+
+</body>
+</html>
